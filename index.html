@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <h1>Are you interested in coding?</h1>
     <p>Have you been thinking of learning how to code?</p>
     <p>Fill out this quick form to tell you which language is best for you.</p>
-    
+
 
     <form id="userInfo">
         <label for="outdoorAct">Do you like outdoor activities?</label>
@@ -29,8 +29,8 @@
         </select>
         <br />
 
-        <label for="favoriteColor">What's your favorite color?</label>
-        <select id="colors" name="colors">
+        <label for="favoriteColors">What's your favorite color?</label>
+        <select id="favoriteColors" name="favoriteColors">
             <option value="lightBlue">Light Blue</option>
             <option value="lavender">Lavender</option>
             <option value="Pink">Pink</option>
@@ -38,7 +38,7 @@
         </select>
         <br />
         <label for="favoriteSeason">What's your favorite season of the year?</label>
-        <select id="season" name="season">
+        <select id="favoriteSeason" name="favoriteSeason">
             <option value="Spring">Spring</option>
             <option value="Summer">Summer</option>
             <option value="Fall">Fall</option>
@@ -49,10 +49,13 @@
 
     </form>
 
+    <h2>You got:</h2>
+    <p id="output"></p>
+
     <div id="JavaScript" class="hidden">
         <p>You got JavaScript!</p>
     </div>
-        
+
 
 
     <div id="Python" class="hidden">
@@ -68,6 +71,77 @@
     </div>
 
 
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/script.js"></script>
+    <title>Language Selector</title>
+</head>
+
+<body>
+    <h1>Are you interested in coding?</h1>
+    <p>Have you been thinking of learning how to code?</p>
+    <p>Fill out this quick form to tell you which language is best for you.</p>
+
+    <form id="userInfo">
+        <label for="outdoorAct">Do you like outdoor activities?</label>
+        <input id="outdoorAct" type="text" name="outdoorAct">
+        <br />
+        <label for="coffee">Do you like iced coffee?</label>
+        <input id="coffee" type="text" name="coffee">
+        <br />
+        <label for="loveLottery">Would you rather find true love or win the lottery?</label>
+        <select id="loveLottery" name="loveLottery">
+            <option value="Love">Love</option>
+            <option value="Lottery">Lottery</option>
+        </select>
+        <br />
+
+        <label for="favoriteColors">What's your favorite color?</label>
+        <select id="favoriteColors" name="favoriteColors">
+            <option value="lightBlue">Light Blue</option>
+            <option value="lavender">Lavender</option>
+            <option value="pink">Pink</option>
+            <option value="red">Red</option>
+        </select>
+        <br />
+        <label for="favoriteSeason">What's your favorite season of the year?</label>
+        <select id="favoriteSeason" name="favoriteSeason">
+            <option value="spring">Spring</option>
+            <option value="summer">Summer</option>
+            <option value="fall">Fall</option>
+            <option value="winter">Winter</option>
+        </select>
+        <br />
+        <button type="submit">Get answer</button>
+    </form>
+
+    <h2>You got:</h2>
+    <p id="output"></p>
+
+    <div id="JavaScript" class="hidden">
+        <p>You got JavaScript!</p>
+    </div>
+
+    <div id="Python" class="hidden">
+        <p>You got Python</p>
+    </div>
+
+    <div id="C" class="hidden">
+        <p>You got C#</p>
+    </div>
+
+    <div id="Ruby" class="hidden">
+        <p>You got Ruby</p>
+    </div>
 </body>
 
 </html>

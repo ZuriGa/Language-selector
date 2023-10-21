@@ -1,34 +1,59 @@
-// work in progress
+// 
 
-// function hideResults() {
-//     document.getElementById("JavaScript").setAttribute("class", "hidden");
-//     document.getElementById("Python").setAttribute("class", "hidden");
-//     document.getElementById("C").setAttribute("class", "hidden");
-//     document.getElementById("Ruby").setAttribute("class", "hidden");
+function hideResults() {
+    event.preventDefault();
+    document.getElementById("JavaScript").classList.add("hidden");
+    document.getElementById("Python").classList.add("hidden");
+    document.getElementById("C").classList.add("hidden");
+    document.getElementById("Ruby").classList.add("hidden");
+}
 
-// }
+document.querySelector("form").onsubmit = function (event) {
+    hideResults(s);
 
-// window.onload = function () {
-//     document.querySelector("form").onsubmit = function (event) {
-//         event.preventDefault();
-//         hideResults();
-//         const outdoorAct = parseInt(document.querySelector("input#outdoorAct").value);
-//         const coffee = parseInt(document.querySelector("input#coffee").value);
-//         const loveLottery = document.querySelector("select#loveLottery").value;
-//         const colors = document.querySelector("select#colors").value;
-//         const season = document.querySelector("select#season").value;
+    const outdoorActivities = document.querySelector("input.outdoorAct").value;
+    const coffee = document.querySelector("input#coffee").value;
+    const loveLottery = document.querySelector("select#loveLottery").value;
+    const colors = document.querySelector("select#favoriteColors").value;
+    const season = document.querySelector("select#favoriteSeason").value;
 
-//         if (outdoorAct === "yes" || outdoorAct === "no" && (coffee === no || coffee === yes) && (loveLottery === "lottery" || colors === "lightBlue") && (season === "winter" || season === "spring")) {
-//             document.getElementById("JavaScript").removeAttribute("class");
-//         } else if (outdoorAct === "yes" && outdoorAct === "no" && (colors === "lavender" || favColor === "red")) {
-//             document.getElementById("Python").removeAttribute("class");
-//         } else if (coffee === "yes" && (favColor === "pink" || favColor === "lightBlue") && (season === "spring" || season === "summer")) {
-//             document.getElementById("C").removeAttribute("class");
-//         } else (outdoorAct === "yes" && (coffee === "yes" && (loveLottery === "lottery") && (colors === "lightBlue" || colors === "pink"))) {
-//             document.getElementById("Ruby").removeAttribute("class");
+    let result;
 
+    if (
+        (outdoorActivities === "yes" || outdoorActivities === "no") &&
+        (coffee === "no") &&
+        (loveLottery === "lottery" || loveLottery === "love") &&
+        (colors === "lightBlue") &&
+        (season === "winter")
+    ) {
+        result = "JavaScript";
+    } else if (
+        (outdoorActivities === "yes" || outdoorActivities === "no") &&
+        (colors === "lavender" || colors === "red")
+    ) {
+        result = "Python";
+    } else if (
+        (coffee === "yes") &&
+        (colors === "pink" || colors === "lightBlue") &&
+        (season === "spring" || season === "summer")
+    ) {
+        result = "C#";
+    } else if (
+        (outdoorActivities === "yes") &&
+        (coffee === "yes") &&
+        (loveLottery === "lottery") &&
+        (colors === "lightBlue" || colors === "pink")
+    ) {
+        result = "Ruby";
+    }
 
-//         };
-
-//     }
-// }
+    if (result) {
+        document.getElementById("output").innerText = result;
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("form").onsubmit = function (event) {
+                hideResults();
+            };
+        });
+        
+    }
+};
