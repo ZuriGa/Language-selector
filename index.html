@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/script.js"></script>
+    <title>Language Selector</Select></title>
+</head>
+
+<body>
+    <h1>Are you interested in coding?</h1>
+    <p>Have you been thinking of learning how to code?</p>
+    <p>Fill out this quick form to tell you which language is best for you.</p>
+    
+
+    <form id="userInfo">
+        <label for="outdoorAct">Do you like outdoor activities?</label>
+        <input id="outdoorAct" type="text" name="outdoorAct">
+        <br />
+        <label for="coffee">Do you like Iced coffee?</label>
+        <input id="coffee" type="text" name="coffee">
+        <br />
+        <label for="loveLottery">Would you rather find true love or win the lottery?</label>
+        <select id="loveLottery" name="loveLottery">
+            <option value="Love">Love</option>
+            <option value="Lottery">Lottery</option>
+        </select>
+        <br />
+
+        <label for="favoriteColor">What's your favorite color?</label>
+        <select id="colors" name="colors">
+            <option value="lightBlue">Light Blue</option>
+            <option value="lavender">Lavender</option>
+            <option value="Pink">Pink</option>
+            <option value="Red">Red</option>
+        </select>
+        <br />
+        <label for="favoriteSeason">What's your favorite season of the year?</label>
+        <select id="season" name="season">
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Fall">Fall</option>
+            <option value="Winter">Winter</option>
+        </select>
+        <br />
+        <button type="submit">Get answer</button>
+
+    </form>
+
+    <div id="JavaScript" class="hidden">
+        <p>You got JavaScript!</p>
+    </div>
+        
+
+
+    <div id="Python" class="hidden">
+        <p>You got Python</p>
+    </div>
+
+    <div id="C" class="hidden">
+        <p>You got C#</p>
+    </div>
+
+    <div id="Ruby" class="hidden">
+        <p>You got Ruby</p>
+    </div>
+
+
+</body>
+
+</html>
