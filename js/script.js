@@ -16,11 +16,11 @@ window.onload = function () {
         const favMusic = document.querySelector("select#music").value;
         const date = parseInt(document.querySelector("input#date").value);
 
-        if (age >= 1 && favNumber <= 10 && (favColor === "Green" || favColor === "Red") && favMusic === "Pop") {
+        if (age >= 24 && favNumber <= 10 && (favColor === "Green" || favColor === "Red") && favMusic === "Pop") {
             document.getElementById("JavaScript").removeAttribute("class");
-        } else if (age >= 1 && date <= 30 && (favColor === "Green" || favColor === "Blue")) {
-            document.getElementById("C#").removeAttribute("class");
-        } else if (age >= 10 && age <= 70 && (favColor === "Yellow" || favColor === "Blue") && (favMusic === "Jazz" || favMusic === "Hiphop")) {
+        } else if (age >= 1 && date <= 30 && (favColor === "Green" || favColor === "Blue") && date >= 15 ) {
+            document.getElementById("C").removeAttribute("class");
+        } else if (favNumber >= 4 && age <= 70 && (favColor === "Yellow" || favColor === "Blue") && (favMusic === "Jazz" || favMusic === "Hiphop")) {
             document.getElementById("Ruby").removeAttribute("class");
         } else if (favMusic === "Rock" && favColor === "Yellow") {
             document.getElementById("HTML").removeAttribute("class");
