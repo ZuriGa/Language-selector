@@ -3,7 +3,7 @@ function hideResults() {
     document.getElementById("Python").setAttribute("class", "hidden");
     document.getElementById("C").setAttribute("class", "hidden");
     document.getElementById("HTML").setAttribute("class", "hidden");
-    document.getElementById("error-message").setAttribute("class", "hidden")
+    document.getElementById("TryDiffCareer").setAttribute("class", "hidden")
 }
 
 window.onload = function () {
@@ -25,7 +25,7 @@ window.onload = function () {
         } else if (favNumber >= 1 && disneyland >= 1  && (favMusic === "Rock" && favColor === "Yellow" )) {
             document.getElementById("HTML").removeAttribute("class");
         } else
-            document.getElementById("error-message").removeAttribute("class");
+            document.getElementById("TryDiffCareer").removeAttribute("class");
 
 
 

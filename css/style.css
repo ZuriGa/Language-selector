@@ -1,8 +1,9 @@
 .hidden {
     display: none;
+    
 }
 
-* body {
+body {
     text-align: center;
     background-image: url('/img/photo1.jpeg');
     background-repeat: repeat;
@@ -15,7 +16,29 @@ form {
 
 }
 
-#error-message {
-    font-weight: 600;
-    color: red;
+#JavaScript {
+    font-size: larger;
+    color: rgb(9, 9, 156);
+
+}
+
+#Python {
+    font-size: larger;
+    color: rgb(19, 19, 190);
+}
+
+#C {
+    font-size: larger;
+    color: rgb(42, 42, 192);
+}
+
+#HTML {
+    font-size: larger;
+    color: rgb(40, 40, 240);
+}
+
+#TryDiffCareer {
+    font-weight: 600px;
+    font-size: larger;
+    color: rgb(122, 122, 247);
 }
