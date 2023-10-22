@@ -14,15 +14,15 @@ window.onload = function () {
         const favColor = document.querySelector("select#colors").value;
         const age = parseInt(document.querySelector("input#age").value);
         const favMusic = document.querySelector("select#music").value;
-        const date = parseInt(document.querySelector("input#date").value);
+        const disneyland = parseInt(document.querySelector("input#disneyland").value);
 
-        if (age >= 24 && favNumber <= 10 && (favColor === "Green" || favColor === "Red") && favMusic === "Pop") {
+        if (age >= 24 && favNumber <= 10 && (favColor === "Green" || favColor === "Red") && favMusic === "Pop" && disneyland >= 1 ) {
             document.getElementById("JavaScript").removeAttribute("class");
-        } else if (age >= 1 && date <= 30 && (favColor === "Green" || favColor === "Blue") && date >= 15 ) {
+        } else if (age >= 29 && disneyland <= 5 && (favColor === "Green" || favColor === "Blue") && favMusic === "Jazz" ) {
             document.getElementById("C").removeAttribute("class");
-        } else if (favNumber >= 4 && age <= 70 && (favColor === "Yellow" || favColor === "Blue") && (favMusic === "Jazz" || favMusic === "Hiphop")) {
-            document.getElementById("Ruby").removeAttribute("class");
-        } else if (favMusic === "Rock" && favColor === "Yellow") {
+        } else if (favNumber >=4 && age <= 35 && (favColor === "Yellow" || favColor === "Red") && (favMusic === "Jazz" || favMusic === "Hiphop") && disneyland >= 1  ) {
+            document.getElementById("Python").removeAttribute("class");
+        } else if (favNumber >= 1 && disneyland >= 1  && (favMusic === "Rock" && favColor === "Yellow" )) {
             document.getElementById("HTML").removeAttribute("class");
         } else
             document.getElementById("error-message").removeAttribute("class");
