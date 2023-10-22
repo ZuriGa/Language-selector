@@ -23,5 +23,5 @@ This project is to create an application for people interested in coding to deci
 * Option to get different language is limited, and suggestion to choose a different career.
 
 ## License
-MIT License. See License.md for more information
-Copyright (c) 2023 Zurisadai Gallegos
+* MIT License. See License.md for more information
+* Copyright (c) 2023 Zurisadai Gallegos
