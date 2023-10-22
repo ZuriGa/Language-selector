@@ -20,7 +20,7 @@ This project is to create an application for people interested in coding to deci
 
 
 ## Known Bugs
-* _Option to get different language is limited, and suggestion to choose a different career.
+* Option to get different language is limited, and suggestion to choose a different career.
 
 ## License
 Copyright (c) 2023 Zurisadai Gallegos
