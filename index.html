@@ -1,80 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/script.js"></script>
-    <title>Language Selector</Select></title>
-</head>
-
-<body>
-    <h1>Are you interested in coding?</h1>
-    <p>Have you been thinking of learning how to code?</p>
-    <p>Fill out this quick form to tell you which language is best for you.</p>
-
-
-    <form id="userInfo">
-        <label for="outdoorAct">Do you like outdoor activities?</label>
-        <input id="outdoorAct" type="text" name="outdoorAct">
-        <br />
-        <label for="coffee">Do you like Iced coffee?</label>
-        <input id="coffee" type="text" name="coffee">
-        <br />
-        <label for="loveLottery">Would you rather find true love or win the lottery?</label>
-        <select id="loveLottery" name="loveLottery">
-            <option value="Love">Love</option>
-            <option value="Lottery">Lottery</option>
-        </select>
-        <br />
-
-        <label for="favoriteColors">What's your favorite color?</label>
-        <select id="favoriteColors" name="favoriteColors">
-            <option value="lightBlue">Light Blue</option>
-            <option value="lavender">Lavender</option>
-            <option value="Pink">Pink</option>
-            <option value="Red">Red</option>
-        </select>
-        <br />
-        <label for="favoriteSeason">What's your favorite season of the year?</label>
-        <select id="favoriteSeason" name="favoriteSeason">
-            <option value="Spring">Spring</option>
-            <option value="Summer">Summer</option>
-            <option value="Fall">Fall</option>
-            <option value="Winter">Winter</option>
-        </select>
-        <br />
-        <button type="submit">Get answer</button>
-
-    </form>
-
-    <h2>You got:</h2>
-    <p id="output"></p>
-
-    <div id="JavaScript" class="hidden">
-        <p>You got JavaScript!</p>
-    </div>
-
-
-
-    <div id="Python" class="hidden">
-        <p>You got Python</p>
-    </div>
-
-    <div id="C" class="hidden">
-        <p>You got C#</p>
-    </div>
-
-    <div id="Ruby" class="hidden">
-        <p>You got Ruby</p>
-    </div>
-
-
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -87,61 +10,56 @@
 </head>
 
 <body>
-    <h1>Are you interested in coding?</h1>
+    <h1>What coding language should you study?</h1>
     <p>Have you been thinking of learning how to code?</p>
-    <p>Fill out this quick form to tell you which language is best for you.</p>
+    <p>Take this quiz to find out which language you should start with</p>
 
     <form id="userInfo">
-        <label for="outdoorAct">Do you like outdoor activities?</label>
-        <input id="outdoorAct" type="text" name="outdoorAct">
-        <br />
-        <label for="coffee">Do you like iced coffee?</label>
-        <input id="coffee" type="text" name="coffee">
-        <br />
-        <label for="loveLottery">Would you rather find true love or win the lottery?</label>
-        <select id="loveLottery" name="loveLottery">
-            <option value="Love">Love</option>
-            <option value="Lottery">Lottery</option>
+        <label for="favoriteNumber">Whats your favorite number? <small>from 1 to 10</small></label>
+        <input id="number1" type="number" name="number1">
+        <label for="favoriteColor">Whats your favorite color?</label>
+        <select id="colors" name="colors">
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Red">Red</option>
         </select>
-        <br />
-
-        <label for="favoriteColors">What's your favorite color?</label>
-        <select id="favoriteColors" name="favoriteColors">
-            <option value="lightBlue">Light Blue</option>
-            <option value="lavender">Lavender</option>
-            <option value="pink">Pink</option>
-            <option value="red">Red</option>
+        <label for="age">How old are you?</label>
+        <input id="age" type="number" name="age">
+        <label for="favoriteMusicGenre">Whats your favorite Music Genre?</label>
+        <select id="music" name="music">
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Jazz">Jazz</option>
+            <option value="HipHop">Hip Hop</option>
         </select>
-        <br />
-        <label for="favoriteSeason">What's your favorite season of the year?</label>
-        <select id="favoriteSeason" name="favoriteSeason">
-            <option value="spring">Spring</option>
-            <option value="summer">Summer</option>
-            <option value="fall">Fall</option>
-            <option value="winter">Winter</option>
-        </select>
-        <br />
-        <button type="submit">Get answer</button>
+        <label for="date">Whats todays date?</label>
+        <input id="date" type="number" name="date">
+        <button type="submit">Submit</button>
     </form>
 
-    <h2>You got:</h2>
-    <p id="output"></p>
-
     <div id="JavaScript" class="hidden">
-        <p>You got JavaScript!</p>
+        <p>JavaScript</p>
     </div>
+        
+
 
     <div id="Python" class="hidden">
-        <p>You got Python</p>
+        <p>Python</p>
     </div>
 
     <div id="C" class="hidden">
-        <p>You got C#</p>
+        <p>C#</p>
     </div>
 
-    <div id="Ruby" class="hidden">
-        <p>You got Ruby</p>
+    <div id="HTML" class="hidden">
+        <p>HTML</p>
     </div>
+
+    <div id="error-message" class="hidden">
+        <p>You are too young sorry!</p>
+    </div>
+
 </body>
 
 </html>
